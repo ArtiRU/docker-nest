@@ -17,7 +17,7 @@ async function bootstrap() {
 
   console.log(`App starting on ${PORT}`);
   app.enableCors({
-    origin: /https?:\/\/localhost(:\d+)?$/,
+    origin: [/https?:\/\/localhost(:\d+)?$/, 'http://45.147.201.160'],
     methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization', 'Accept'],
     credentials: true,
